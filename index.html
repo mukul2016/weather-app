@@ -20,52 +20,59 @@
     <main class="flex-row justify-space-between">
       <div class="col-12 col-md-3">
         <h4>Search for a city</h4>
-        <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-        <button type="submit" class="btn">search</button>
-        <div id="repos-container" class="list-group"></div>
-
+        <form id="user-form">
+          <input name="cityName" id="cityId" type="text" autofocus="true" class="form-input" />
+          <button type="submit" id="btnId" class="btn">search</button>
+        </form>
+        <div id="city-container" class="list-group"></div>
       </div>
 
       <div class="col-12 col-md-9">
         <div class="row-12 row-md-9">
-          <h5>Atlanta 06/25/2020</h5>
+          <h5><span id="citynameId"></span></h5>
           <br>
-          <h5>Humidity: 41%</h5>
+          <h5><span id="tempId">Temperature: </span></h5>
           <br>
-          <h5>Wind Speed:</h5>
+          <h5><span id="humId">Humidity: %</span></h5>
           <br>
-          <h5>UV Index:</h5>
+          <h5><span id="windId">Wind Speed:</span></h5>
+          <br>
+          <h5><span id="uvId">UV Index:</span></h5>
           <br>
 
         </div>
-        <div class="container">
-          <h5>5 Day Forecast</h5>
-          <div class="row">
-            <div class="col-md-2 weather-icon">Column</div>
-            <div class="col-md-2 weather-icon">Column</div>
-            <div class="col-md-2 weather-icon">Column</div>
-            <div class="col-md-2 weather-icon">Column</div>
-            <div class="col-md-2 weather-icon">Column</div>
+        <h5>5 Day Forecast</h5>
+        <div class="row">
+          <div class="col-md-2 weather-icon">
+            <p><strong>Date:</strong> <span id="dateId">06/01/2020</span></p>
+            <!-- <p><span id="wIcon"></span><i class='wu wu-black wu-32 wu-clear'></i> </p> -->
+            <p><strong>Temp:</strong> <span id="tempId">70 F</span></p>
+            <p><strong>Humidity:</strong> <span id="humId">102</span></p>
+          </div>
+          <div class="col-md-2 weather-icon">
+            <p><strong>Date:</strong> <span id="dateId">06/01/2020</span></p>
+            <p><strong>Temp:</strong> <span id="tempId">70 F</span></p>
+            <p><strong>Humidity:</strong> <span id="humId">102</span></p>
+          </div>
+          <div class="col-md-2 weather-icon">
+            <p><strong>Date:</strong> <span id="dateId">06/01/2020</span></p>
+            <p><strong>Temp:</strong> <span id="tempId">70 F</span></p>
+            <p><strong>Humidity:</strong> <span id="humId">102</span></p>
+          </div>
+          <div class="col-md-2 weather-icon">
+            <p><strong>Date:</strong> <span id="dateId">06/01/2020</span></p>
+            <p><strong>Temp:</strong> <span id="tempId">70 F</span></p>
+            <p><strong>Humidity:</strong> <span id="humId">102</span></p>
+          </div>
+          <div class="col-md-2 weather-icon">
+            <p><strong>Date:</strong> <span id="dataId">06/01/2020</span></p>
+            <p><strong>Temp:</strong> <span id="tempId">70 F</span></p>
+            <p><strong>Humidity:</strong> <span id="humId">102</span></p>
           </div>
         </div>
-
       </div>
-
     </main>
-    <!-- <div class="col-12 col-md-4">
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search By User</h3>
-        <form id="user-form" class="card-body">
-          <label class="form-label" for="username">Username</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Get User</button>
-        </form>
-      </div>
-    </div>
-    <div class="col-12 col-md-8">
-      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-      <div id="repos-container" class="list-group"></div>
-    </div> -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
@@ -75,7 +82,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
-    <!-- <script src="./assets/js/homepage.js"></script> -->
+    <script src="./assets/js/script.js"></script>
 
   </body>
 
