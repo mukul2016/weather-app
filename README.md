@@ -6,3 +6,4 @@ TBD/WIP : fix issues to check for
 2. Update HTML elements to show 5 day forecast
 3. Add weather Icon in the 5 day forecast cards
 4. Improve the javascript to create object and render the 5-day forecast correctly.
+5. Use local storage to save last entered city information.
